@@ -1,7 +1,0 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" fill="none">
- <defs><radialGradient id="a" cx="0" cy="0" r="1" gradientTransform="translate(628 416) rotate(90) scale(290 350)" gradientUnits="userSpaceOnUse"><stop stop-color="#E7FF8D"/><stop offset=".1" stop-color="#FFB568"/><stop offset=".31" stop-color="#B83C23"/><stop offset=".62" stop-color="#28110E"/><stop offset="1" stop-color="#08090A"/></radialGradient><filter id="b"><feGaussianBlur stdDeviation="20"/></filter><linearGradient id="c" x1="0" y1="100" x2="1100" y2="660" gradientUnits="userSpaceOnUse"><stop stop-color="#F3FFAD"/><stop offset="1" stop-color="#F14B28" stop-opacity="0"/></linearGradient></defs>
- <rect width="1200" height="760" fill="#0B0C0E"/><circle cx="629" cy="403" r="294" fill="url(#a)"/>
- <g filter="url(#b)" opacity=".8"><path d="M134 545C356 295 610 544 970 187" stroke="#FB5429" stroke-width="58"/><path d="M295 241c170 60 321 162 619 167" stroke="#E5FF83" stroke-width="18"/></g>
- <g stroke="#FFF2B2" opacity=".52"><path d="M0 630C219 552 367 396 505 144M177 760C352 614 570 419 720 0M538 760C650 571 789 417 1024 102"/><circle cx="630" cy="404" r="225"/><circle cx="630" cy="404" r="156"/></g>
- <path d="M31 670C366 667 798 307 1164 84" stroke="url(#c)" stroke-width="1"/><g fill="#FFF1A4"><circle cx="191" cy="488" r="3"/><circle cx="339" cy="144" r="2"/><circle cx="907" cy="526" r="4"/><circle cx="1062" cy="225" r="2"/></g>
-</svg>

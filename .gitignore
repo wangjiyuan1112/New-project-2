@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Production build output
+dist/
+
+# Vite cache and logs
+.vite/
+*.log
+
+# Local extracted source files
+.resume-extract/
