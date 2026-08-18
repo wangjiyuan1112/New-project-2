@@ -1,0 +1,79 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <pattern id="microDots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#969696" opacity=".32"/></pattern>
+    <pattern id="grid" width="160" height="160" patternUnits="userSpaceOnUse"><path d="M160 0H0V160" fill="none" stroke="#f5d326" stroke-width="1" opacity=".38"/><circle cx="1" cy="1" r="3" fill="#f5d326" opacity=".72"/></pattern>
+    <pattern id="cross" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M7 7l12 12M19 7L7 19" stroke="#8a8a8a" stroke-width="1" opacity=".58"/></pattern>
+    <linearGradient id="fadeLeft" x1="0" x2="1"><stop stop-color="#18191b"/><stop offset="1" stop-color="#5b5b5b"/></linearGradient>
+    <linearGradient id="fadeRight" x1="0" x2="1"><stop stop-color="#595959"/><stop offset="1" stop-color="#191a1c"/></linearGradient>
+    <radialGradient id="orb"><stop stop-color="#3b3b3b"/><stop offset=".68" stop-color="#1c1d1f"/><stop offset=".7" stop-color="#717171"/><stop offset=".73" stop-color="#1a1b1e"/><stop offset="1" stop-color="#090a0c"/></radialGradient>
+    <linearGradient id="brush" x1="0" x2="1"><stop stop-color="#b8b8b6" stop-opacity=".4"/><stop offset=".5" stop-color="#38393b" stop-opacity=".92"/><stop offset="1" stop-color="#111215" stop-opacity=".18"/></linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="12"/></filter>
+  </defs>
+
+  <rect width="1920" height="1080" fill="#0a0b0d"/>
+  <rect width="1920" height="1080" fill="url(#microDots)" opacity=".27"/>
+  <rect x="42" y="26" width="1836" height="1028" fill="none" stroke="#333437"/>
+  <rect x="42" y="26" width="1836" height="1028" fill="url(#grid)" opacity=".77"/>
+
+  <!-- Research panels -->
+  <g opacity=".9">
+    <rect x="44" y="27" width="605" height="358" fill="url(#fadeLeft)" opacity=".86"/>
+    <rect x="44" y="27" width="605" height="358" fill="url(#microDots)" opacity=".84"/>
+    <rect x="1271" y="27" width="607" height="358" fill="url(#fadeRight)" opacity=".9"/>
+    <rect x="1271" y="27" width="607" height="358" fill="url(#microDots)" opacity=".86"/>
+    <path d="M45 210H648M1271 210H1877" stroke="#f5d326" opacity=".3"/>
+  </g>
+
+  <!-- Circular technical marks -->
+  <g fill="#0b0c0e" stroke="#595a5d" stroke-width="2">
+    <circle cx="350" cy="100" r="67"/><circle cx="500" cy="100" r="67"/><circle cx="500" cy="240" r="67"/>
+    <circle cx="1395" cy="99" r="67"/><circle cx="1544" cy="99" r="67"/><circle cx="1742" cy="99" r="67"/>
+    <circle cx="1395" cy="239" r="67"/><circle cx="1544" cy="239" r="67"/><circle cx="1395" cy="379" r="67"/>
+  </g>
+  <g stroke="#737477" stroke-width="2" opacity=".72">
+    <path d="M318 100h64M350 68v64M468 100h64M500 68v64M468 240h64M500 208v64"/>
+    <path d="M1363 99h64M1395 67v64M1512 99h64M1544 67v64M1710 99h64M1742 67v64M1363 239h64M1395 207v64M1512 239h64M1544 207v64M1363 379h64M1395 347v64"/>
+  </g>
+
+  <!-- High contrast data fields -->
+  <path d="M44 385H650V608C505 583 361 588 44 613Z" fill="#4a4a4a" opacity=".42"/>
+  <path d="M44 385H650V608C505 583 361 588 44 613Z" fill="url(#cross)" opacity=".84"/>
+  <path d="M1270 385H1878V610C1617 590 1481 585 1270 613Z" fill="#444547" opacity=".64"/>
+  <path d="M1270 385H1878V610C1617 590 1481 585 1270 613Z" fill="url(#cross)" opacity=".72"/>
+  <path d="M937 90V714" stroke="#f5d326" stroke-width="3"/>
+  <path d="M933 268l5-6 5 6-5 7zM933 531l5-6 5 6-5 7z" fill="#f5d326"/>
+  <g font-family="monospace" font-size="13" fill="#f5d326" opacity=".86"><text x="952" y="384">2026</text><text x="952" y="522">CTRL</text><text x="68" y="54">×12</text><text x="1695" y="522">[+]</text></g>
+
+  <!-- Central abstract material / VFX plume -->
+  <g opacity=".92">
+    <path d="M944 539C879 606 801 657 720 709c-100 64-196 97-351 135l53 83c192-20 347-78 478-157 59-36 103-87 145-155 39 72 91 122 148 158 122 77 266 137 449 159l44-92c-143-34-241-67-332-127-83-54-159-111-233-174l-42 57-43-57z" fill="url(#brush)"/>
+    <path d="M942 550c-70 148-154 277-334 392M1034 550c69 145 149 272 331 389" fill="none" stroke="#999a97" stroke-width="25" opacity=".22"/>
+    <path d="M941 570l-31 171 32 54 32-54-32-171z" fill="#bababa" opacity=".42"/>
+    <path d="M568 715c165-60 278-114 374-184M1313 715c-165-60-278-114-374-184" fill="none" stroke="#0c0d0f" stroke-width="38" opacity=".7"/>
+  </g>
+
+  <!-- Orbital routes -->
+  <g fill="none" stroke="#797a7c" stroke-width="5" opacity=".72">
+    <path d="M503 708c-80 0-126 39-126 100v52c0 55 44 99 99 99h329c67 0 121-54 121-121V678"/>
+    <path d="M1415 708c80 0 126 39 126 100v52c0 55-44 99-99 99h-329c-67 0-121-54-121-121V678"/>
+  </g>
+  <g fill="none" stroke="#242529" stroke-width="2"><path d="M503 708c-80 0-126 39-126 100v52c0 55 44 99 99 99h329c67 0 121-54 121-121V678"/><path d="M1415 708c80 0 126 39 126 100v52c0 55-44 99-99 99h-329c-67 0-121-54-121-121V678"/></g>
+
+  <!-- Bottom scientific fields -->
+  <g opacity=".78">
+    <circle cx="444" cy="871" r="227" fill="url(#orb)"/><circle cx="1448" cy="871" r="227" fill="url(#orb)"/>
+    <path d="M273 901h342M342 730v342M1277 901h342M1448 730v342" stroke="#78797a" stroke-width="2" opacity=".5"/>
+    <path d="M496 799l183 183M1242 799l183 183" stroke="#78797a" stroke-width="2" opacity=".36"/>
+  </g>
+
+  <!-- Signature yellow signal paths -->
+  <g fill="none" stroke="#f5d326" stroke-width="4">
+    <path d="M-30 1001C221 957 320 1047 499 1035c172-11 218-163 417-166 213-4 300 158 522 103 165-40 178-148 235-239 45-73 115-109 247-142"/>
+    <path d="M1560 35c-15 150-51 333-77 486-31 184-57 320-167 493"/>
+  </g>
+  <g fill="#f5d326"><path d="M507 1035l22-22 20 22-20 21z"/><path d="M910 868l23-22 21 22-21 22z"/><path d="M1314 1014l27-35 24 35-24 34z"/><circle cx="1560" cy="35" r="5"/></g>
+
+  <!-- Labels and microframes -->
+  <g fill="none" stroke="#797a7c" stroke-width="2" opacity=".78"><rect x="160" y="823" width="91" height="91"/><rect x="278" y="715" width="42" height="42"/><rect x="668" y="410" width="43" height="43"/><rect x="1211" y="410" width="43" height="43"/><rect x="1647" y="754" width="57" height="57"/></g>
+  <g font-family="monospace" font-size="14" fill="#bfc0be" opacity=".68"><text x="73" y="490">A SHORT-LIVED POLYATOMIC</text><text x="73" y="508">FORMED FROM A HALOGEN</text><text x="1414" y="480">REALTIME ENERGY</text><text x="1414" y="498">CONVERGENCE FIELD</text><text x="172" y="808">0</text><text x="170" y="938">Xe</text><text x="1283" y="690">VFX / ARCHIVE</text></g>
+</svg>

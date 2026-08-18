@@ -142,8 +142,8 @@ function App() {
         <a href="#top" className="brand" onClick={closeMenu} aria-label="返回顶部"><Mark /><span>{portfolio.name}</span></a>
         <nav className={menuOpen ? 'is-open' : ''} aria-label="主导航">
           <a href="#about" onClick={closeMenu}>关于我 <em>01</em></a>
-          <a href="#work" onClick={closeMenu}>精选项目 <em>02</em></a>
-          <a href="#projects" onClick={closeMenu}>项目经历 <em>03</em></a>
+          <a href="#projects" onClick={closeMenu}>项目经历 <em>02</em></a>
+          <a href="#work" onClick={closeMenu}>个人作品 <em>03</em></a>
         </nav>
         <a className="header-contact" href="#contact">联系合作 <ArrowIcon /></a>
         <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-label="切换导航" aria-expanded={menuOpen}><MenuIcon /></button>
@@ -157,7 +157,7 @@ function App() {
           <div className="hero-grid" />
           <div className="hero-vignette" />
         </div>
-        <img className="hero-graphic-system" src="/assets/hero-graphic-system.svg" alt="" aria-hidden="true" />
+        <img className="hero-graphic-system" src="/assets/hero-excimer.svg" alt="" aria-hidden="true" />
         <div className="hero-graphic-meta" aria-hidden="true"><span>VFX / REALTIME / MOTION</span><span>01—2026</span><span>GAME EFFECTS</span></div>
         <div className="hero-copy">
           <p className="eyebrow"><span className="live-dot" /> {portfolio.role}</p>
@@ -204,21 +204,9 @@ function App() {
 
       </section>
 
-      <section id="work" className="work section-shell content-section">
-        <div className="section-head">
-          <div className="section-kicker"><span>02</span><p>SELECTED WORK</p></div>
-          
-        </div>
-        <div className="work-grid">
-          {portfolio.projects.map((project) => <article className={`project-card project-card--clean ${project.className}`} key={project.id}>
-            <VideoPreview project={project} />
-          </article>)}
-        </div>
-      </section>
-
       <section id="projects" className="resume-project-experience section-shell content-section">
         <div className="section-head">
-          <div className="section-kicker"><span>03</span><p>项目经历</p></div>
+          <div className="section-kicker"><span>02</span><p>项目经历</p></div>
           <p className="project-experience-note">项目经历</p>
         </div>
         <div className="project-experience-grid" aria-label="项目经历">
@@ -226,6 +214,18 @@ function App() {
             <span>{String(index + 1).padStart(2, '0')}</span>
             <h2>{project}</h2>
             <i aria-hidden="true" />
+          </article>)}
+        </div>
+      </section>
+
+      <section id="work" className="work section-shell content-section">
+        <div className="section-head">
+          <div className="section-kicker"><span>03</span><p>个人作品</p></div>
+          
+        </div>
+        <div className="work-grid">
+          {portfolio.projects.map((project) => <article className={`project-card project-card--clean ${project.className}`} key={project.id}>
+            <VideoPreview project={project} />
           </article>)}
         </div>
       </section>
@@ -246,6 +246,9 @@ function App() {
 }
 
 createRoot(document.getElementById('root')).render(<App />);
+
+
+
 
 
 

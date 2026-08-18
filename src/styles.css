@@ -617,3 +617,88 @@ nav a:hover, nav em { color: #363af5; }
   .about-contact-grid > * { padding-right: 0; }
   .about-contact-grid > * + * { padding-left: 0; }
 }
+
+/* Enlarge every numbered section title by 50%. */
+.section-kicker p { font-size: 16.5px; }
+
+
+/* Soft visual hand-off from the editorial hero into the dark archive sections. */
+.hero--graphic::after {
+  inset: auto 0 0;
+  z-index: 5;
+  height: clamp(150px, 19vh, 240px);
+  background:
+    linear-gradient(155deg, transparent 0 61%, rgba(240,111,168,.2) 61.1% 61.45%, transparent 61.6% 100%),
+    linear-gradient(to bottom, rgba(7,8,10,0) 0%, rgba(7,8,10,.16) 32%, rgba(7,8,10,.7) 70%, #07080a 100%);
+  mix-blend-mode: normal;
+}
+.about {
+  position: relative;
+  border-top-color: transparent;
+}
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: max(28px, calc((100vw - 1700px) / 2));
+  right: max(28px, calc((100vw - 1700px) / 2));
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(215,255,69,.38) 18%, rgba(255,255,255,.14) 58%, transparent);
+  opacity: .7;
+}
+
+/* Hero refit — dark technical editorial system with custom VFX-research graphics. */
+.site-header:not(.is-scrolled) { color: #f3f4f5; }
+.site-header:not(.is-scrolled) .brand-mark i { background: #f5d326; }
+.site-header:not(.is-scrolled) nav a { color: rgba(255,255,255,.72); }
+.site-header:not(.is-scrolled) nav a:hover,
+.site-header:not(.is-scrolled) nav em { color: #f5d326; }
+.site-header:not(.is-scrolled) .header-contact { border-color: rgba(245,211,38,.65); }
+.site-header:not(.is-scrolled) .header-contact:hover { color: #111216; border-color: #f5d326; background: #f5d326; }
+
+.hero--graphic {
+  background: #090a0c;
+  color: #f4f4f0;
+  isolation: isolate;
+}
+.hero-graphic-system { opacity: 1; }
+.hero--graphic::before {
+  z-index: 2;
+  background:
+    linear-gradient(90deg, rgba(7,8,10,.56) 0%, rgba(7,8,10,.1) 40%, transparent 70%),
+    linear-gradient(0deg, rgba(7,8,10,.14), transparent 43%);
+}
+.hero--graphic::after {
+  z-index: 5;
+  height: clamp(190px, 26vh, 330px);
+  background: linear-gradient(to bottom, rgba(7,8,10,0), rgba(7,8,10,.22) 36%, #07080a 100%);
+}
+.hero-graphic-meta { color: rgba(255,255,255,.6); }
+.hero-graphic-meta span:nth-child(1),
+.hero-graphic-meta span:nth-child(2) { color: #f5d326; }
+.hero--graphic .hero-copy { margin-bottom: 78px; }
+.hero--graphic .eyebrow { color: rgba(255,255,255,.72); }
+.hero--graphic .eyebrow span:last-child { color: #f5d326 !important; }
+.hero--graphic .live-dot { background: #f5d326 !important; box-shadow: 0 0 0 5px rgba(245,211,38,.16) !important; }
+.hero--graphic .hero-pretitle { color: #f5d326; }
+.hero--graphic h1 {
+  max-width: 1090px !important;
+  color: #f5d326;
+  font-size: clamp(82px, 9.5vw, 176px) !important;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: -.095em !important;
+  line-height: .82;
+  text-shadow: none;
+}
+.hero--graphic h1 span { color: #f5d326 !important; text-shadow: none !important; }
+.hero--graphic .hero-foot p { color: rgba(255,255,255,.62) !important; }
+.hero--graphic .round-link { color: #f5d326; border-color: rgba(245,211,38,.8); background: rgba(8,9,11,.72); }
+.hero--graphic .round-link:hover { color: #101114; background: #f5d326; border-color: #f5d326; }
+.hero--graphic .hero-index,
+.hero--graphic .hero-coordinate { color: rgba(255,255,255,.58) !important; }
+.hero--graphic .hero-index i { background: #f5d326; }
+
+@media (max-width: 900px) {
+  .hero--graphic h1 { font-size: clamp(66px, 14vw, 108px) !important; }
+}
