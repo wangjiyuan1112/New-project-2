@@ -10,3 +10,6 @@ dist/
 
 # Local extracted source files
 .resume-extract/
+
+# Original high-resolution video backups
+.original-videos/
